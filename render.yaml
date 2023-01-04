@@ -1,18 +1,18 @@
 databases:
   - name: ma-raclette
-    databaseName: mysite
-    user: mysite
+    databaseName: ma_raclette_production
+    user: ma_raclette
 
 services:
   - type: web
-    name: mysite
+    name: ma-raclette
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: ma-raclette
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
