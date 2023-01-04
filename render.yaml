@@ -14,5 +14,5 @@ services:
         fromDatabase:
           name: ma-raclette
           property: connectionString
-      - key: 15041992
+      - key: RAILS_MASTER_KEY
         sync: false
