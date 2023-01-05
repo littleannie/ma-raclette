@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %> #Modify this line
   database: ma_raclette_production
   username: ma_raclette
-  password: <%= ENV["DATABASE_URL"] %>
+  password: <%= ENV["RENDER_DEPLOY_DATABASE_PASSWORD"] %>
