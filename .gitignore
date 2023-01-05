@@ -41,9 +41,3 @@
 *.swp
 .DS_Store
 .env*
-<<<<<<< HEAD
-=======
-.env*
-.env*
-.env*
->>>>>>> master
